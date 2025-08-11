@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vikas Singh — Portfolio</title>
+
+  <!-- Fonts & AOS & Typed -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Vikas Singh — BTech CSE. Full Stack / Python / App Developer. Projects: E-commerce for sneakers, Anomaly Detection using Random Forest.">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand">Vikas Singh</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="cta">Contact</a>
+      </div>
+      <button id="burger" aria-label="menu">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-left" data-aos="fade-right">
+        <p class="eyebrow">Hi, I’m</p>
+        <h1 class="name">Vikas Singh</h1>
+        <p class="role">BTech • Full Stack Developer • Python Developer • Application Developer</p>
+        <p class="lead">
+          <span id="typed"></span>
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">See Projects</a>
+          <a href="https://drive.google.com/uc?export=download&id=14ZA6OsADncKGDAPWOwkJ9JecGDCkDTCL" target="_blank" class="btn ghost">Download Resume</a>
+        </div>
+
+        <div class="social-row" aria-hidden="false">
+          <a href="https://www.linkedin.com/in/vikassingh1307" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/Vikassingh1307" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-right" data-aos="zoom-in">
+        <div class="photo-frame">
+          <img src="vikas.jpg/vikas.jpg" alt="Vikas Singh" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <div class="container two-col" data-aos="fade-up">
+      <div>
+        <h2>About Me</h2>
+        <p>
+          I’m Vikas Singh, a BTech graduate in Computer Science and Engineering. I have skills in Python, C, C++, HTML, CSS, and JavaScript.
+          I’ve completed projects such as an E-commerce website for sneakers and an Anomaly Detection system using Random Forest.
+          I’m passionate about technology, problem-solving, and continuous learning.
+        </p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:vikassinghuit@gmail.com">vikassinghuit@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+918182860359">+91 8182860359</a></li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/vikassingh1307" target="_blank" rel="noopener">vikassingh1307</a></li>
+        </ul>
+      </div>
+
+      <div class="about-stats">
+        <div class="stat" data-aos="flip-left">
+          <h3>2+</h3>
+          <p>Major Projects</p>
+        </div>
+        <div class="stat" data-aos="flip-left" data-aos-delay="100">
+          <h3>Python</h3>
+          <p>Preferred stack</p>
+        </div>
+        <div class="stat" data-aos="flip-left" data-aos-delay="200">
+          <h3>Problem Solver</h3>
+          <p>Enthusiast</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="container" data-aos="fade-up">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">C++</div>
+        <div class="skill">Python</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 data-aos="fade-right">Selected Projects</h2>
+
+      <!-- Static projects (kept as fallback) -->
+      <div class="project" data-aos="fade-up">
+        <div class="project-media">
+          <img src="https://i.ytimg.com/vi/dyJCJHOs_dM/maxresdefault.jpg" alt="E-commerce Sneakers">
+        </div>
+        <div class="project-body">
+          <h3>E-commerce Website for Sneakers</h3>
+          <p>
+            A full-stack e-commerce platform for selling sneakers. Implemented product listing, shopping cart, secure checkout,
+            and an admin dashboard to manage products and orders. Built with HTML, CSS, JavaScript, and backend APIs.
+          </p>
+          <div class="project-tags">
+            <span>Full Stack</span>
+            <span>HTML/CSS/JS</span>
+            <span>Responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project reverse" data-aos="fade-up" data-aos-delay="120">
+        <div class="project-media">
+          <img src="https://imgopt.infoq.com/fit-in/3000x4000/filters:quality(85)/filters:no_upscale()/articles/fraud-detection-random-forest/en/resources/1fraud-detection2-s-1565621140264.png" alt="Anomaly Detection">
+        </div>
+        <div class="project-body">
+          <h3>Anomaly Detection Using Random Forest Froud Detection</h3>
+          <p>
+            Anomaly Detection using Random Forest for fraud detection is a machine learning approach that identifies unusual patterns in data, such as suspicious transactions, by combining multiple decision trees. It handles complex, imbalanced datasets well and helps flag potential fraud in real-time for further investigation.
+          </p>
+          <div class="project-tags">
+            <span>Machine Learning</span>
+            <span>Python</span>
+            <span>Random Forest</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auto-fetch from GitHub -->
+      <div id="reposList" class="repos-list" data-aos="fade-up"></div>
+
+      <div class="center" style="margin-top:28px">
+        <a class="btn primary" href="https://github.com/Vikassingh1307" target="_blank" rel="noopener">View GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <div class="container" data-aos="zoom-in">
+      <h2>Contact</h2>
+      <p>If you'd like to work together or want to say hi, email me or call:</p>
+      <div class="contact-cta">
+        <a class="btn primary" href="mailto:vikassinghuit@gmail.com">Email Me</a>
+        <a class="btn ghost" href="tel:+918182860359">Call</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vikas Singh — Built with ❤️</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script.js"></script>
+</body>
+</html>
