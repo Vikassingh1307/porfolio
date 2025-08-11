@@ -103,3 +103,54 @@ body{
   .photo-frame{width:220px;height:220px}
   .skills-grid{grid-template-columns:repeat(2,1fr)}
 }
+
+.contact-container {
+  max-width: 400px;
+  margin: auto;
+  background: #14232d;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  color: #eee;
+  font-family: 'Inter', sans-serif;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background-color: #0b111c;
+  color: #eee;
+  font-family: inherit;
+  resize: vertical;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: 2px solid #f0a500;
+  background-color: #1f2a38;
+}
+
+#contact-form button {
+  background: #f0a500;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #0b111c;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact-form button:hover {
+  background: #d18c00;
+}

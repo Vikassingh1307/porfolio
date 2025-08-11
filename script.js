@@ -73,3 +73,28 @@ async function loadRepos(username = 'Vikassingh1307') {
 
 // call loadRepos with your GitHub username
 loadRepos('Vikassingh1307');
+
+
+// Wrap EmailJS init and form handling inside DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize EmailJS with your User ID
+  emailjs.init('nQThc3Biani4mbLrl');
+
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submit (page reload)
+
+    emailjs.sendForm('service_yejdxt6', 'template_9hi1ohl', this)
+      .then(() => {
+        status.style.color = 'lightgreen';
+        status.textContent = '✅ Message sent successfully!';
+        form.reset();  // Clear the form inputs
+      }, (error) => {
+        status.style.color = 'red';
+        status.textContent = '❌ Failed to send message. Please try again.';
+        console.error('EmailJS error:', error);
+      });
+  });
+});
